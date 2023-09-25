@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./asseet22/zelanntrix.logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+       
+        
+
+      .common-section {
+        height: 60rem;
+        width: 100%;
+        border: 2px solid black;
+        background: linear-gradient( #000000,#404040, #e66465, #9198e5);
+        display: flex;
+        justify-content: space-evenly;
+        
+      }
+      .common-section h3 {
+        font-size: 45px;
+        color: white;
+      }
+      @media (max-width:500px) {
+        .common-section h3 {
+            font-size: 35px;
+        }
+      }
+      .container-rows {
+        
+        margin-top: 300px;
+      }
+      .container-icons {
+        margin-top: 30px;
+       display: flex;
+         
+      }
+      .container-icons p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+
+
+
+      .contact-form  {
+        margin-top: 200px;
+        height: 34rem;
+        
+      }
+      label {
+        color: white;
+        font-size: 17px;
+      }
+      
+       .contact-form form input{
+        height: 50px;
+        width: 25rem;
+        margin: 5px 5px;
+        color: white;
+        border: 1px solid black;
+        background-color: rgba(0,0,0,0.3);
+       }
+       .contact-form form select {
+        height: 50px;
+        width: 25rem;
+        margin: 5px 5px;
+        color: white;
+        border: 1px solid black;
+        background-color: rgba(0,0,0,0.3);
+       }
+       .contact-form form textarea {
+        height: 9rem;
+        width: 20rem;
+        margin: 5px 5px;
+        color: white;
+        border: 1px solid black;
+        background-color: rgba(0,0,0,0.3);
+       }
+       .contact-form form button {
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        font-weight: 700;
+        color: black;
+        background-color: rgba(0,0,0,0.3);
+        }
+        .contact-form form button:hover {
+        color:red;
+        font-weight: 700;
+        transition: all 0.8s;
+        }
+       @media (max-width:900px) {
+        .common-section {
+            display: grid;
+            grid-template-columns: repeat(auto, minmax(68%, auto));
+        }
+        .container-rows {
+            margin-top: 100px;
+            
+        }
+        .contact-form {
+            margin-top: 0;
+            margin-bottom:0rem;
+            border: none;
+        }  
+        
+        .contact-form form input {
+            height: 50px;
+            width: 17rem;
+            margin: 5px 5px;
+        }
+        .contact-form form select {
+            height: 50px;
+            width: 17rem;
+            margin: 5px 5px;
+        }
+        .contact-form form textarea {
+            height: 5rem;
+            width: 17rem;
+            margin: 5px 5px;
+        }
+      }
+
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logo-img" src="./asseet22/zelanntrix.logo.jpg" style="width:73px;" >
+        <label class="logo-name"> ZELANTRIX</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- <label class="logo-nav"> ZelantriX</label> -->
+        <ul>
+            
+            <li>  <a href="index.html">Home</a></li>
+            <li>  <a href="index2.html">Events</a></li>
+            <li> <a href="index7.html"> About us</a></li>
+            <li> <a href="index4.html"> Gallery</a></li>
+            <li> <a class="active" href="#"> Contact Us</a></li>
+            <li class="insta"> <a href="https://instagram.com/zelantrix?igshid=NTc4MTIwNjQ2YQ=="><img src="./asseet22/instagram.png" style="width: 30px;"></a></li>
+        </ul>
+    </nav>
+    <section class="common-section">
+        
+            <div class="container-rows">
+                <h3>CONTACT US</h3>
+                <div class="container-icons">
+                    <i class="fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                    <p style="color:white;"> Bangalore</p>
+                </div>
+                <br>
+                <div class="container-icons">
+                    <i class="fa-solid fa-phone" style="font-size: 25px;"></i>
+                    <p> <a href="tel:+91-7411604290" style="color:white;"> +91-7411604290</a></p> 
+                </div>
+                <br>
+                <div class="container-icons">
+                    <i class="fa-solid fa-envelope" style="font-size: 25px;"></i>
+                    <p> <a href="mailto:zelantrix725@gmail.com"  style="color:white;">zelantrixx@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-form">
+                  <form action="https://formspree.io/f/xqkvawln" method="POST">
+                      <label>Name :</label><br>
+                      <input type="text" name="name" placeholder="Your Name" required>
+                      <br>
+                      <label>Phone Nmuber :</label><br>
+                      <input type="text" name="phone" placeholder="Phone Number" required>
+                      <br>
+                      <label>Email :</label><br>
+                      <input type="email" name="email" placeholder="Email Id" required>
+                      <br>
+                      <label>Job :</label><br>
+                      <select name="job" placeholder="Job" >
+                             <option selected>select the options</option>
+                             <option value="Managements">Management</option>
+                             <option value="Artist">Artist</option>
+                             <option value="Promotional Team">Promotional Team</option>
+                             <option value="Helping Staff">Helping Staff</option>
+                     </select>
+                     <br>
+                     <label>Message :</label><br>
+                     <textarea name="message" rows="4" placeholder="how can we help u"></textarea>
+                     <br>
+                     <button type="submit" > Submit </button>
+                  </form>
+          </div>
+       
+    </section>    
+
+   
+</body>
+</html>

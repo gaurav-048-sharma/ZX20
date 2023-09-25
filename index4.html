@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" href="./asseet22/zelanntrix.logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none; 
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("./asseet22/wp4194098-aesthetic-pc-wallpapers.jpg");
+           
+        }
+        nav {
+            padding: 0;
+            margin: 0;
+           background-color: black;
+           height: 80px;
+           width: 100%;
+           position: fixed;
+        }
+        nav img {
+            margin-left: 100px;
+        }
+        @media (max-width:400px) {
+            nav img {
+                margin-left: 20px;
+            }
+        }
+        nav .logo-name {
+            color: white;
+            font-size: 30px;
+            position: relative;
+            bottom: 30px;
+            margin-left: 18rem;
+        }
+        @media (max-width: 900px) {
+            nav .logo-name {
+                display: none;
+            }
+        }
+        nav ul {
+            float: right;
+            margin-right: 9rem ;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 80px ;
+            margin: 0 5px;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 7px 13px;
+            border-radius: 5px;
+            
+        }
+        nav ul li .vid {
+            color: orange;
+            background-color: #0066ff;
+            border: 2px solid #0066ff;
+            text-decoration: none;
+            z-index: 10;
+        }
+        nav ul li .vid:hover {
+            color: orange;
+        }
+        
+        nav ul li a:hover {
+            color: red;
+        }
+        a.active,a:hover {
+            color: red;
+            transition: 0.5s;
+        }
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px; 
+            cursor: pointer;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+        
+        @media (max-width:1300px) {
+            .checkbtn {
+                display: block;
+                display: "";
+            }
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: #000000;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s;
+            }
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a {
+                font-size: 30px;
+        
+            }
+            a:hover,a:active {
+                background-color: none;
+                color: purple;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+        
+        .gallery {
+            height: 100%;
+            width: 75%;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0.9) ;
+            display: flex;
+            justify-content: center;
+            }
+        
+        
+        @media (max-width:700px) {
+            .gallery {
+                display: grid;
+            }
+            
+            
+        }
+        .gallery .gallery-content img {
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 300px;
+            height: 300px;
+        }
+        @media (max-width:500px) {
+            .gallery .gallery-content img {
+                width: 200px;
+            }
+            
+            
+        }
+        
+
+      
+        
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <img src="./asseet22/zelanntrix.logo.jpg" style="width:73px;">
+        <label class="logo-name"> ZELANTRIX</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- <label class="logo-nav"> ZelantriX</label> -->
+        <ul>
+            
+            <li>  <a href="index.html">Home</a></li>
+            <li>  <a href="index2.html">Events</a></li>
+            <li> <a href="index7.html"> About Us</a></li>
+            <li> <a class="active" href="#">Gallery</a></li>
+            <li> <a href="index5.html"> Contact Us</a></li>
+            <li> <button><a href="./index6.html" class="vid" > watch<i class="fa-solid fa-chevron-right"></i></a></button></li>
+        </ul>
+        
+    </nav>
+    
+          <!-- gallery -->
+    <div class="gallery">
+        
+       <div class="gallery-content" style="text-align:center">
+       <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=audience-band-celebration-1190298.jpg&fm=jpg">
+       <img src="https://buzzharmony.com/wp-content/uploads/2016/02/festivalfeat.jpg">
+       <img src="https://whataftercollege.com/wp-content/uploads/2019/03/Cover-image-7-768x401.jpg">
+       <img src="https://tse1.mm.bing.net/th?id=OIP.fRNbYepTximlp9wWPz-bogHaE8&pid=Api&P=0&h=180">
+       <img src="https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg">
+       
+       </div>
+       
+       
+       
+    </div>
+    
+        
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+</body>
+</html>

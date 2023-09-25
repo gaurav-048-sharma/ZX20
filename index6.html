@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="icon" href="./asseet22/zelanntrix.logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+           
+        }
+        body {
+           background-image: url("./asseet22/billy-huynh-W8KTS-mhFUE-unsplash.jpg");
+           
+        }
+        .nav {
+            
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            
+        }
+        .nav a i {
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: 35px;  
+            color: white;
+        }
+        .nav a i:hover {
+            transition: all 0.6s;
+            color: red;
+        }
+        .nav .navbar {
+            color: white;
+            font-size: 40px;
+            margin-left: 40rem;
+        }
+        @media (max-width:960px){
+            .nav .navbar {
+                margin-left: 30rem;
+            }
+        }
+        @media (max-width:700px){
+            .nav .navbar {
+                margin-left: 10rem;
+            }
+        }
+
+        .main {
+            width: 75%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+           }
+          
+        .main .main-content video {
+            width: 33%;
+            height: 22rem;
+            margin-top: 20px;
+             
+        } @media (max-width:500px) {
+            .main  {
+                margin-top: 50px;
+            }
+        }
+        @media (max-width:600px) {
+            .main .main-content video {
+              width: 100%;
+             display: grid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="navbar"> video</a>
+    </div>
+    
+    <div class="main">
+        <div class="main-content" style="text-align:center">
+            <video controls src="./asseet22/vidd1.mp4"></video>
+            <video controls src="./asseet22/1.mp4"></video>
+            <video controls src="./asseet22/2.mp4"></video>
+            <video controls src="./asseet22/3.mp4"></video>
+            <video controls src="./asseet22/4.mp4"></video>
+            
+            
+        </div>
+        
+    </div>
+      
+    
+    <script>
+        let btn = document.querySelector("a");
+        btn.addEventListener("click", () => {
+            window.history.back(); 
+        });
+
+
+        
+        
+    </script>
+</body>
+</html>

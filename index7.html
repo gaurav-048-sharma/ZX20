@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./asseet22/zelanntrix.logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+    body {
+        background-color: black;
+    }
+
+   
+   
+    .container {
+        width: 80%;
+        
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .container  .heading h1 {
+        font-size: 60px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .container  .heading p{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: darkkhaki;
+    }
+    .about {
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image {
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+    }
+   
+    .about-image img {
+        margin-top: 60px;
+        width: 50rem;
+        height: auto;
+        display: block;
+        transition: 0.5s;
+    }
+    .about-image:hover img {
+        transform: scale(1.2);
+    }
+    .about-content {
+        flex: 1;
+    }
+    .about-content h2 {
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: antiquewhite;
+        
+    }
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgb(18, 13, 5);
+        color: rgb(248, 248, 248);
+    }
+    
+    @media screen and (max-width:768px) {
+         .about {
+            display: grid;
+
+         }
+         .about-image img {
+            width: 20rem;
+            
+         }
+         
+    }
+</style>
+
+</head>
+<body>
+    
+    <!-- the navbar -->
+    <nav>
+        <img class="logo-img" src="./asseet22/zelanntrix.logo.jpg" style="width:73px;" >
+        <label class="logo-name"> ZELANTRIX</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a href="index1.html" style="transition: all 1s;"> Home</a></li>
+            <li> <a href="index2.html" style="transition: all 1s;"> Events</a></li>
+            <li> <a class="active" href="#" style="transition: all 1s;"> About us</a></li>
+            <li> <a href="index4.html" style="transition: all 1s;"> Gallery</a></li>
+            <li> <a href="index5.html" style="transition: all 1s;"> Contact Us</a></li>
+            <li class="insta"> <a href="https://instagram.com/zelantrix?igshid=NTc4MTIwNjQ2YQ=="><img src="./asseet22/instagram.png" style="width: 30px;"></a></li>
+        </ul>
+     </nav>
+
+     <div class="container">
+       
+        <div class="heading">
+            <h1> About Us</h1><br>
+            <p>SINCE 2022, Bringing You Memorable Experiences  </p>
+        </div>
+        <section class="about">
+            <div class="about-image">
+                <img src="./asseet22/music.webp" >
+            </div>
+            <div class="about-content">
+                <!-- <h2> he ther</h2> -->
+                <p>A good party, as we all know, is more than just a fun night out. It's an experience that should last a lifetime.
+
+                    Our team of professionals is committed to selecting the best venues, top DJs, and outstanding service providers
+                     to create the ultimate nightlife experiences. We hand-picked our crew to make sure you have the time of your life.
+                    
+                    ​</p>
+                    <br>
+                    <br>
+                    <p>
+                        A lifetime of memories is what we aim to produce. That is why we encourage you to 
+                        join us at our next event and experience the best of nightlife. Come and have fun!
+                    </p>
+            </div>
+
+        </section>
+    </div>
+    </body>
+    </html>

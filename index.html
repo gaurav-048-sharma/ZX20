@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zelantrix</title>
+    <link rel="icon" href="./asseet22/zelanntrix.logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./asseet22/Trippy-neon-animated-gif.webp");
+            }
+        #preloader {
+            background: #000000 url("https://cdn.dribbble.com/users/728598/screenshots/3302705/circle-loader.gif") no-repeat center center;
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+        .content {
+            padding: 0;
+            margin: 0;
+            height: 45rem;
+            display: flex;
+            
+        }
+        .content-bar {
+            
+            height: 300px;
+            width: 40rem;
+            border: 17px inset rgb(0, 0, 0);
+            border-top-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-color: rgba(0, 0, 0, 0.6);
+            list-style-type: none;
+            color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        
+        .content-bar b {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .content-bar h1 {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-bar  h3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        @media (max-width:900px) {
+            .content-bar {
+              
+               border: none;
+               background-color: rgba(0, 0, 0, 0);
+            }
+            
+        }
+        
+        .back-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        
+        .upcoming-events {
+            
+            margin-bottom: 100px;
+            width: 100%;
+            height: 45rem;
+        }
+        .back-video2 {
+            width: 100%;
+            z-index: -1;
+             position: absolute;
+            right: 0; 
+            
+        }
+        @media (max-width:1100px) {
+            
+            .back-video2 {
+               display: none;
+            }
+            .upcoming-events {
+                
+                background-image: url("./asseet22/music.webp");
+                background-size: cover;
+                
+            }
+        }
+        
+        .content-bar2 {
+           
+            padding-top: 100px;
+            color: rgb(236, 245, 132);
+            display: flex;
+            justify-content: center;
+        }
+        .content-bar2 h1 {
+            font-size: 35px;
+            flex: 0.3;
+        }
+        .content-bar2 a button {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            color:#000000;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+        /*footer {
+            height: 60px;
+            width: 100%;
+            position: relative;
+            top: 12rem;
+            background-color: black;
+        }
+        footer div {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer div h3 {
+            
+            margin-top: 20px;
+        }
+        footer div h3 a {
+            color: white;
+        }
+        @media (max-width:1400px) and (min-width:900px) {
+            footer {
+                position: relative;
+                top: 0;
+                
+            }
+        }
+        @media (max-width:900px) {
+            footer {
+                position: relative;
+                top: 0;
+                height: 8rem;
+            }
+            footer div {
+                display: block;
+                
+            }
+            footer div h3 {
+                margin-top: 0;
+                padding: 10px 10px;
+                display: flex;
+                justify-content: center;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div id="preloader"></div>
+    <!-- the navbar -->
+    <nav>
+        <img class="logo-img" src="./asseet22/zelanntrix.logo.jpg" style="width:73px;" >
+        <label class="logo-name"> ZELANTRIX</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a class="active" href="#" style="transition: all 1s;"> Home</a></li>
+            <li> <a href="index2.html" style="transition: all 1s;"> Events</a></li>
+            <li> <a href="index7.html" style="transition: all 1s;"> About us</a></li>
+            <li> <a href="index4.html" style="transition: all 1s;"> Gallery</a></li>
+            <li> <a href="index5.html" style="transition: all 1s;"> Contact Us</a></li>
+            <li class="insta"> <a href="https://instagram.com/zelantrix?igshid=NTc4MTIwNjQ2YQ=="><img src="./asseet22/instagram.png" style="width: 30px;"></a></li>
+        </ul>
+     </nav>
+    <!-- content -->
+    
+    <div class="content"> 
+        <video autoplay loop muted plays-inline class="back-video"> 
+            <source src="./asseet22/production_id_4916733 (1080p).mp4">
+        </video>
+              <div class="content-bar">
+                <b> WELCOME TO</b> 
+                <h1> ZELANTRIX</h1>
+                <h3> Your Bangalore Music Source</h3>
+              </div>
+    </div>
+
+
+<!-- isme java script likhna hoga -->
+    <div class="upcoming-events">
+        <video autoplay loop muted plays-inline class="back-video2"> 
+            <source src="./asseet22/star_-_31606 (720p).mp4">
+        </video>
+        <div class="content-bar2" >
+            <h1>Upcoming-Events</h1>
+            <a href="./index2.html"><button>Book Now</button></a> 
+        </div>
+        
+    </div>
+    
+    <!-- footer -->
+
+   
+    <!-- <footer>
+            <div>
+                
+                    <h3><a href="#"> Terms And Condition</a></h3>
+                   <h3><a href="#"> Privary Policy</a></h3>
+                   <h3><a href="#"> Refund Policy</a></h3>
+                    
+                </ul>
+                
+            </div>
+    </footer> -->
+   
+
+       <script src="app.js"></script>
+
+      
+
+</body>
+</html>
